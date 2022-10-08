@@ -1,0 +1,30 @@
+git clone https://github.com/udacity/nd064_course_1.git
+py -m venv .myvenv
+.\.myvenv\Scripts\activate
+
+cd techtrends
+pip install -r requirements.txt
+Initialize the database by using the python init_db.py command
+python app.py
+
+run docker desktop
+create Dockerfile
+docker build -t techtrends .
+docker images
+docker run -d -p 7111:3111 techtrends
+docker logs CONTAINER_ID (Where the CONTAINER_ID is the ID of the Docker container that runs an application.)
+
+create workflows and commit changes or push code to github
+cd to req directory in local
+pwd
+mkdir -p ./.github/workflows 
+ls
+git init
+git add .
+git status
+git commit -m "First commit"
+git remote add origin https://github.com/sudiptasen09/CouldNative.git
+git push -u origin master
+
+
+create 
